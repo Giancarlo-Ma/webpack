@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Jest Tests",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": [
+        "--inspect-brk",
+        "${workspaceRoot}/bin/webpack",
+        "${workspaceRoot}/examples/commonjs/example.js",
+        "${workspaceRoot}/examples/commonjs/bundle.js"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "skipFiles": [
+        "<node_internals>/**/*.js",
+        "${workspaceRoot}/node_modules/async/**/*.js",
+      ]
+    }
+  ]
+}
