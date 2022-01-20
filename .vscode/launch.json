@@ -16,7 +16,7 @@
       "port": 9229,
       "skipFiles": [
         "<node_internals>/**/*.js",
-        "${workspaceRoot}/node_modules/async/**/*.js",
+        "${workspaceRoot}/node_modules/**/*.js",
       ]
     }
   ]
